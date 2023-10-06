@@ -1,0 +1,16 @@
+#include <unistd.h>
+
+/**
+ * main - This is the starting/entry point
+ * Return: 1 if properly exited (success).
+ */
+
+int main(void)
+{
+  /* subtract 1 to exclude the null terminator*/
+write(2,
+"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+ 
+return (1);
+}
+
