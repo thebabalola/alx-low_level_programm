@@ -3,15 +3,11 @@
 #include <time.h>
 
 /**
- *Main - The main function of the program
- *
- *This function checks if a given integer is positive, negative, or zero
- *and should print the result.
- *
- *Return - should return (0) if success.
- *
-*/
-
+ * main function of the program
+ * This function checks if a given integer is positive, negative, or zero
+ * and prints the result.
+ * return 0 if successful.
+ */
 int main(void)
 {
 	int n;
