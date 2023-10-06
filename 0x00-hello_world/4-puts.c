@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main- prints the world in 'puts'
+ * main- serves as starting point or entry.
  *
- * Description: C program which prints what is held in the put fumction
+ * Description: This C program prints what is held in the 'puts' function.
  *
  * Return: 0 if properly exited (sucess).
  */
