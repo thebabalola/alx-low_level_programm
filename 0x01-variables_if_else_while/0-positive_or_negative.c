@@ -3,11 +3,12 @@
 #include <time.h>
 
 /**
- *Main - The main will serve as the starting or entry point
+ *Main - The main function of the program
  *
- *Description - This programs will sort through
+ *This function checks if a given integer is positive, negative, or zero
+ *and should print the result.
  *
- *Return - should also return values in order
+ *Return - should return (0) if success.
  *
 */
 
