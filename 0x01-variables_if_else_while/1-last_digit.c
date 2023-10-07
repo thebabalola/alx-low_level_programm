@@ -10,12 +10,13 @@
 
 int main(void)
 {
-	int n = 42;
+	int n;
+	int lastdigi;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	int lastdigi = n % 10;
+	lastdigi = n % 10;
 
 	/* here goes the code */
 	if (lastdigi > 5)
