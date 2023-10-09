@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+/**
+ * main - prints all possible combination of two two digits
+ * followed by a new line
+ * Return: should always return 0 (Success)
+ */
