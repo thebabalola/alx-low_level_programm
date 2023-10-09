@@ -9,12 +9,12 @@ int main(void)
 {
 	int numA, numB;
 
-	for (numA = 0; numA <= 9; numA++)
+	for (numA = 0; numA <= 8; numA++)
 	{
 		for (numB = numA + 1; numB <= 9; numB++)
 		{
-			putchar(numA + '0');  /* Prints first digit of charcter */
-			putchar(numB + '0');  /* Prints second digit of character */
+			putchar((numA + '0');  /* prints first digit of charcter */
+			putchar((numB + '0');  /* prints second digit of character */
 
 			if (numA != 8 || numB != 9)
 			{
