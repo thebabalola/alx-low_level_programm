@@ -12,7 +12,7 @@ int main(void)
 	for
 		(alphabts = 'a';
 		 alphabts <= 'z';
-		 alphabts++);
+		 alphabts++)
 	{
 		if (alphabts != 'q' && alphabts != 'e')
 		{
