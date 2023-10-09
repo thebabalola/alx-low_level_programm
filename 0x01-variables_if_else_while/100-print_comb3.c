@@ -10,16 +10,16 @@ int main(void)
 {
 	int digi01, digi02;
 
-	for (digi01 = 0; digi01 <= 5; digi01++)
+	for (digi01 = 0; digi01 <= 08; digi01++)
 	{
-		for (digi02 = digi01 + 1; digi02 <= 7; digi02++)
+		for (digi02 = digi01 + 1; digi02 <= 09; digi02++)
 		{
 			/* prints first digit - digi01 */
 			putchar(digi01 + '0');
 			/* prints second digit - digi02 */
 			putchar(digi02 + '0');
 
-			if (digi01 != 5 || digi02 != 7)
+			if (digi01 != 08 || digi02 != 09)
 			{
 				/* prints comma */
 				putchar(',');

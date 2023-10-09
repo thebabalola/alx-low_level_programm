@@ -11,7 +11,7 @@ int main(void)
 
 	for (numA = 0; numA <= 49; numA++)
 	{
-		for (numA = numA + 1; numB <= 49; numB++)
+		for (numB = numA + 1; numB <= 49; numB++)
 		{
 			putchar((numA / 10) + '0');  /* Prints tens digit of numA */
 			putchar((numA % 10) + '0');  /* Prints ones digit of numA */
