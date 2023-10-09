@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+/**
+ * main - prints all num of base 16 in lowercase
+ * followed by a new line
+ * Return: should always return 0 (Success)
+ */
+int main(void)
+{
+	char hexadigit;
+
+	for (hexadigit = '0'; hexadigit <= '9'; hexadigit++)
+	{
+		/* should Print digits 0-9 */
+		putchar(hexadigit);
+	}
+
+	for (hexadigit = 'a'; hexadigit <= 'f'; hexadigit++)
+	{
+		/* Print lowercase letters a-f */
+		putchar(hexadigit);
+	}
+
+	putchar('\n');
+
+	return 0;
+}
