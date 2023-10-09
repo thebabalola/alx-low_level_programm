@@ -10,11 +10,11 @@ int main(void)
 {
 	int digi01, digi02, digi03;
 
-	for (digi01 = 0; digi01 <= 07; digi01++)
+	for (digi01 = 0; digi01 <= 7; digi01++)
 	{
-		for (digi02 = digi01 + 1; digi02 <= 08; digi02++)
+		for (digi02 = digi01 + 1; digi02 <= 8; digi02++)
 		{
-			for (digi03 = digi03 + 1; digi03 <= 09; digi02++)
+			for (digi03 = digi03 + 1; digi03 <= 9; digi02++)
 			{
 			/* prints first digit - digi01 */
 			putchar(digi01 + '0');
@@ -23,7 +23,7 @@ int main(void)
 			/* prints third digit - digi03 */
 			putchar(digi03 + '0');
 
-			if (digi01 != 07 || digi02 != 08 || digi03 != 09)
+			if (digi01 != 7 || digi02 != 8 || digi03 != 9)
 			{
 				/* prints comma */
 				putchar(',');
