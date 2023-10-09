@@ -7,16 +7,16 @@
  */
 int main(void)
 {
-	char alphabets;
+	char alphabts;
 
 	for
-		(alphabets = 'a';
-		 alphabets <= 'z';
-		 alphabets++);
+		(alphabts = 'a';
+		 alphabts <= 'z';
+		 alphabts++);
 	{
-		if (alphabets != 'q' && alphabets != 'e')
+		if (alphabts != 'q' && alphabts != 'e')
 		{
-			putchar(alphabets);
+			putchar(alphabts);
 		}
 	}
 
