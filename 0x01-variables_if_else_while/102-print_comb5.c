@@ -9,20 +9,24 @@ int main(void)
 {
 	int numA, numB;
 
-	for (numA = 0; numA <= 8; numA++)
+	for (numA = 0; numA <= 98; numA++)
 	{
-		for (numB = numA + 1; numB <= 9; numB++)
+		for (numB = numA + 1; numB <= 99; numB++)
 		{
-			putchar((numA + '0');  /* prints first digit of charcter */
-			putchar((numB + '0');  /* prints second digit of character */
 
-			if (numA != 8 || numB != 9)
+			putchar((numA / 10) + '0');
+			putchar((numA % 10) + '0');
+			putchar(' ');
+			putchar((numB / 10) + '0');
+			putchar((numB % 10) + '0');
+
+			if (numA != 98 || numB != 99)
 			{
 				/* prints comma */
 				putchar(',');
 				/* prints space */
 				putchar(' ');
-			}
+			};
 		}
 	}
 	/* prints newline character */
