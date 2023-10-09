@@ -13,11 +13,8 @@ int main(void)
 	{
 		for (numB = numA + 1; numB <= 9; numB++)
 		{
-			putchar((numA / 10) + '0');  /* Prints tens digit of numA */
-			putchar((numA % 10) + '0');  /* Prints ones digit of numA */
-			putchar(' ');                   /* Prints a space */
-			putchar((numB / 10) + '0');  /* Prints tens digit of numB */
-			putchar((numB % 10) + '0');  /* Prints ones digit of numB */
+			putchar(numA + '0');  /* Prints first digit of charcter */
+			putchar(numB + '0');  /* Prints second digit of character */
 
 			if (numA != 8 || numB != 9)
 			{

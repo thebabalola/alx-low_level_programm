@@ -14,7 +14,7 @@ int main(void)
 	{
 		for (digi02 = digi01 + 1; digi02 <= 8; digi02++)
 		{
-			for (digi03 = digi03 + 1; digi03 <= 9; digi02++)
+			for (digi03 = digi02 + 1; digi03 <= 9; digi03++)
 			{
 			/* prints first digit - digi01 */
 			putchar(digi01 + '0');
