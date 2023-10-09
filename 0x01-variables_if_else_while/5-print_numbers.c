@@ -11,7 +11,7 @@ int main(void)
 
 	for (digi = 0; digi <= 9; digi++)
 	{
-		printf("%i", digi); /* Prints digit */
+		printf("%i\n", digi); /* Prints digit */
 	}
 
 	return (0);
