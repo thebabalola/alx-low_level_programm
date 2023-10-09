@@ -7,30 +7,18 @@
  */
 int main(void)
 {
-	int digi01, digi02;
+	int digi0102;
 
-	for	(digi01 = 0; digi01 <= 9; digi01++)
-
+	for	(digi0102 = 0; digi0102 <= 9; digi0102++)
 	{
-		for (digi02 = 0; digi02 <= 9; digi02++)
-		{
-			/* prints first digit */
-			putchar(digi01 + '0');
-			/* prints comma */
-			putchar(',');
-			/* print a space */
-			putchar(' ');
-			/* print the second digit */
-			putchar(digi02 + '0');
-
-			if (!(digi01 == 9 && digi02 == 9))
+		putchar(digi0102 + '0');
+			if (digi0102 < 9)
 			{
 				/* prints another comma */
 				putchar(',');
 				/* prints another space */
 				putchar(' ');
 			}
-		}
 	}
 
 	/* Prints newline character */
