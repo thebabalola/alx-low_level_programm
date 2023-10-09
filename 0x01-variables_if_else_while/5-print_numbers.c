@@ -13,6 +13,7 @@ int main(void)
 	{
 		printf("%i\n", digi); /* Prints digit */
 	}
+	printf("\n"); /* Prints a newline character after all digits */
 
 	return (0);
 }
