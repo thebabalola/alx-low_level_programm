@@ -1,42 +1,49 @@
 #include "main.h"
 
 /**
- * print_times_table - prints n times-table, starting from 0
- * @n: is the number of the times table (0 to 15)
+ * print_times_table- prints n times-table, starting from 0
+ * @n: is the number of the times table
  */
 void print_times_table(int n)
 {
 	int e, f, g;
 
-	if (n < 0 || n > 15)
-		return;
-
-	for (e = 0; e <= n; e++)
+	if (n >= 0 && n <= 15)
 	{
-		for (f = 0; f <= n; f++)
+		for (e = 0; e <= n; e++)
 		{
-			g = f * e;
-
-			if (f != 0)
+			for (f = 0; f <= n; f++)
 			{
-				_putchar(',');
-				_putchar(' ');
-
-				if (g < 10)
+				g = f * e;
+				if (f == 0)
 				{
+					_putchar(g + '0');
+				}
+				else if (g < 10 && f != 0)
+				{
+					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
+					_putchar(' ');
+					_putchar(g + '0');
+				}
+				else if (g >= 10 && g < 100)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar((g / 10) + '0');
+					_putchar((g % 10) + '0');
+				}
+				else if (g >= 100)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar((g / 100) + '0');
+					_putchar(((g / 10) % 10) + '0');
+					_putchar((g % 10) + '0');
 				}
 			}
-
-			if (g >= 10)
-				_putchar((g / 10) + '0');
-			else
-				_putchar(' ');
-
-			_putchar((g % 10) + '0');
+			_putchar('\n');
 		}
-
-		_putchar('\n');
 	}
-}
