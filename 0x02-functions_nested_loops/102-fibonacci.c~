@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+/**
+ * main - prints alphabets in lowercase
+ *
+ * Return: should always return 0 (Success)
+ */

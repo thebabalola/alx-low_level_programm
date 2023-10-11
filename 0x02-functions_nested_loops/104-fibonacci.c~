@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+/**
+ * main - serves as program entry point
+ *
+ * Return: should always return 0 (Success)
+ */

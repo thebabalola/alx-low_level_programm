@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * print_to_98 -prints natural numbers from n to 98,
+ * print_to_98 -prints natural numbers from n to 98.
  *
  * followed by a new line
  *
- * @n: print from this number
+ * @n: print from n
  */
 
 void print_to_98(int n)
