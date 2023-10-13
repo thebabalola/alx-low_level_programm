@@ -1,0 +1,25 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * main - This program calculatesand prints large number
+ * Return: Always return (o) on success
+ */
+
+int main(void)
+{
+	long int number = 612852475143;
+	long int largest_prime_factor;
+
+	for (largest_prime_factor = 2; largest_prime_factor <= number; largest_prime_factor++)
+	{
+		if (number % largest_prime_factor == 0)
+		{
+			number /= largest_prime_factor;
+			largest_prime_factor--;
+		}
+	}
+
+	printf("%ld\n", largest_prime_factor);
+	return (0);
+}
