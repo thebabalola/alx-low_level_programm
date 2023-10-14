@@ -15,7 +15,7 @@ void print_triangle(int size)
 		for (f = 1; f < (size - e); f++)
 			_putchar(' ');
 		for (f--; f < size; f++)
-			_putchar(35);  /* Here, 35 represents the '#' character */.
+		  _putchar(35);  /* Here, 35 represents the '#' character */
 		if (e < (size - 1))
 			_putchar('\n');
 	}
