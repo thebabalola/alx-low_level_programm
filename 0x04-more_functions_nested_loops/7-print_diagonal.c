@@ -13,8 +13,9 @@ void print_diagonal(int n)
 	{
 		for (spaces = 0; spaces < row; spaces++)
 		{
-			_putchar(' '); /* Print a space for each row except the first */.
+		_putchar(' '); /* Print a space for each row except the first */
 		}
+
 		diagonalChar = 92; /* The ASCII value 92 represents a bar */
 		_putchar(diagonalChar);
 
