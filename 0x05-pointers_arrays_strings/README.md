@@ -1,1 +1,1 @@
-i am the readme for pointers array and strings
+i am the readme for pointers and array
