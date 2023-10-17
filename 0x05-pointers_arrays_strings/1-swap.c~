@@ -1,0 +1,16 @@
+#include "main.h"
+
+/**
+ * swap_int - exchanges the values of two integers
+ *
+ * @a: first integer to swap
+ * @b: second integer to swap
+ */
+
+void swap_int(int *a, int *b)
+{
+    /* Store the value of the first integer in a temporary variable */
+	int temp = *a;
+	*a = *b;        /* Assigns value of the 2nd integer to the 1st integer */
+	*b = temp;      /* Assigns stored value (from 1st integer) to the 2nd integer */
+}
