@@ -15,7 +15,7 @@ int main(void)
 	srand((unsigned) time(&t));
 	while (c < 2772)
 	{
-		r = rand() % 128;
+		r = rand() % 95 + 32; /*Limit the range to printable ASCII characters */
 		if ((c + r) > 2772)
 			break;
 		c = c + r;
