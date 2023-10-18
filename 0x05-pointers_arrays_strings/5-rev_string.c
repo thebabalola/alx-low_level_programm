@@ -11,7 +11,8 @@ void rev_string(char *s)
 	char temp, *start, *end;
 
 	/* Calculate the length of the string */
-	while (s[length] != '\0') {
+	while (s[length] != '\0')
+	{
 		length++;
 	}
 
@@ -19,7 +20,8 @@ void rev_string(char *s)
 	end = s + length - 1;
 
 	/* Swap characters from the start and end of the string */
-	while (start < end) {
+	while (start < end)
+	{
 		temp = *start;
 		*start = *end;
 		*end = temp;
