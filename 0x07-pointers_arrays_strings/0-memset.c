@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memset - Fills a block of memory with a specific byte.
+ * _memset - Fills block of memory with a specific byte.
  *
  * @s: Pointer to the memory area.
  * @b: The byte to fill the memory with.
