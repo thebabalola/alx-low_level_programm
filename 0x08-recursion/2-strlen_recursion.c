@@ -1,0 +1,23 @@
+#include "main.h"
+
+/**
+ * _strlen_recursion - returns length of a string using recursion.
+ * @s: string
+ * Return: length of a string.
+ */
+
+int _strlen_recursion(char *s)
+{
+	/* Base case: If the current character is the null terminator */
+	/* the length of the string is 0. */
+	if (*s == '\0')
+	{
+		return (0);
+	}
+	else
+	{
+		/* Recursive case: Add 1 to the length and call the function */
+		/* with the next character in the string (s + 1).*/
+		return (1 + _strlen_recursion(s + 1));
+	}
+}
