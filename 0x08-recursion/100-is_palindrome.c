@@ -42,10 +42,11 @@ int comparator(char *s, int n1, int n2)
 
 
 /**
- * is_palindrome - Detects if a string is a palindrome.
+ * is_palindrome - Detects if string is a palindrome.
  * @s: The input string.
  * Return: 1 if 's' is a palindrome, 0 if not.
  */
+
 	int is_palindrome(char *s)
 	{
 		if (*s == '\0')
