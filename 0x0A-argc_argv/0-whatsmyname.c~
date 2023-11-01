@@ -1,0 +1,16 @@
+ #include <stdio.h>
+
+/**
+ * The main function prints the program's name followed by a new line.
+ *
+ * @argc: The number of command-line arguments (unused in this function).
+ * @argv: An array containing the program's command-line arguments.
+ *
+ * Return: 0 to indicate a successful execution.
+ */
+
+int main(int argc __attribute__((unused)), char *argv[])
+{
+	printf("%s\n", argv[0]);
+	return (0);
+}
