@@ -1,0 +1,1 @@
+i am the readme for memory allocations and free
