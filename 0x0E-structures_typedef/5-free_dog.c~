@@ -1,0 +1,18 @@
+#include "dog.h"
+#include <stdlib.h>
+
+/**
+ * free_dog - Deallocates memory used for a dog's information.
+ * @d: Pointer to a dog structure.
+ *
+ * Returns: Nothing.
+ */
+void free_dog(dog_t *d)
+{
+	if (d)
+	{
+		free(d->name);   /* Deallocate memory for the dog's name */
+		free(d->owner);  /* Deallocate memory for the owner's name */
+		free(d);  /* Deallocate memory for the entire dog structure */
+	}
+}
