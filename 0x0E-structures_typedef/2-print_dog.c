@@ -7,7 +7,7 @@
  *
  * Description: This function prints details about a dog, including its name,
  * age, and owner. If any of these details are missing (NULL), it's indicated.
- * No values are returned.
+ * No value is returned.
  */
 
 void print_dog(struct dog *d)
