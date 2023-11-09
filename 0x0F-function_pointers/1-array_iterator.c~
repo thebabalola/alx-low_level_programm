@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include "function_pointers.h"
+
+/**
+ * array_iterator - iterates through arrays prints arrays.
+ * @array - the arrays to print.
+ * @size - prints the size of array.
+ * @action - prints arrays in base 10 and base 16.
+ * Return - no return.
+ */
+
+void array_iterator(int *array, size_t size, void (*action)(int))
+{
+	(*action)(print_elem);
+	action(print_elem_hex);
+
+	size_t size = sizeof(array) / sizeoff(array[0]);
+
+	int i;
+
+	for (i = 0; i < size ; i++);
+	{
+		for (i = 0; i < size && i < print_elem);
+		for (i = 0; i < sizee && 1 < print_elem_hex);
+	}
+}
