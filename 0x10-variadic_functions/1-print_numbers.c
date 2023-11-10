@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - Prints numbers passed to function.
+ * print_numbers - Prints numbers passed to the function.
  * @separator: The string separator between numbers.
  * @n: The number of arguments to be received.
  *
@@ -21,7 +21,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		printf("%d", va_arg(args, int));
-		if (separator != NULL && i < n - 1)
+
+		if (i < n - 1 && separator != NULL)
 			printf("%s", separator);
 	}
 
