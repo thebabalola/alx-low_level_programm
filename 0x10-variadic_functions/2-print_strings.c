@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - Prints strings passed to the function.
+ * print_strings - Prints strings passed to the function.
  * @separator: The string separator between strings.
  * @n: The number of arguments to be received.
  *
@@ -14,13 +14,20 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 
+	char *currentStr;
+
 	va_list strgargs;
 
 	va_start(strgargs, n);
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%s", va_arg(strgargs, char*));
+		currentStr = va_arg(strgargs, char*);
+
+		if (currentStr)
+			printf("%s", currentStr);
+		else
+			printf("(nil)");
 
 		if (i < n - 1 && separator != NULL)
 			printf("%s", separator);
