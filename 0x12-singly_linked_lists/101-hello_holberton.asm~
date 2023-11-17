@@ -1,0 +1,26 @@
+; Move the address of 'msgs' into esi
+; Move the address of 'fmts' into edi
+; Clear max (set to zero)
+; Call the printf function with msgs and fmts
+; Clear max (set to zero) - preparing the return value
+; Return from the main function
+
+	SECTION .data
+msgs:	 db "Hello, Holberton", 0
+fmts:	 db "%s", 10, 0
+
+	SECTION .text
+	global main
+
+main:
+	push rbp
+
+	mov rsi, msgs
+	mov rdi, fmts
+	mov rax, 0
+	call printf
+
+	pop rbp
+
+	mov rax, 0
+	ret
