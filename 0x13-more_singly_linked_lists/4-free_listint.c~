@@ -1,0 +1,23 @@
+#include <stdlib.h>
+#include "lists.h"
+
+/**
+ * free_listint - Deallocates memory for all nodes in a linked list.
+ * @head: The head pointer of the linked list.
+ *
+ * Description:
+ * Return:
+ */
+
+void free_listint(listint_t *head)
+{
+	listint_t *current = head;
+
+	while (current != NULL)
+	{
+		listint_t *temp = current;
+
+		current = current->next;
+		free(temp);
+	}
+}
