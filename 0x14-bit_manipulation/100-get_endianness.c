@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * check_endianness - function which checks the endianness of the system
+ * get_endianness - function which checks the endianness of the system
  *
  * Return: 0 if it's big endian, 1 if it's little endian
  */
