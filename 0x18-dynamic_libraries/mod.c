@@ -1,0 +1,12 @@
+/**
+ * mod - modulous of two integers
+ * @a: The first int
+ * @b: The second int
+ *
+ * Return: modulous
+ */
+
+int mod(int a, int b)
+{
+	return (a % b);
+}
